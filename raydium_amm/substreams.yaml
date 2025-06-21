@@ -1,7 +1,7 @@
 specVersion: v0.1.0
 package:
   name: 'raydium_amm_events'
-  version: v0.1.7
+  version: v0.1.8
   description: Raydium AMM events substream
   url: https://github.com/0xpapercut/solana-substreams
   image: ./raydium.png
