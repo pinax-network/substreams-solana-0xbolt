@@ -5,7 +5,6 @@ use safe_transmute::{self, trivial::TriviallyTransmutable};
 pub const TEN_THOUSAND: u64 = 10000;
 pub const MAX_ORDER_LIMIT: usize = 10;
 
-#[cfg_attr(feature = "client", derive(Debug))]
 #[repr(C)]
 #[derive(Clone, Copy, Default)]
 pub struct TargetOrder {
@@ -19,7 +18,6 @@ unsafe impl Pod for TargetOrder {}
 #[cfg(target_endian = "little")]
 unsafe impl TriviallyTransmutable for TargetOrder {}
 
-#[cfg_attr(feature = "client", derive(Debug))]
 #[repr(C)]
 #[derive(Clone, Copy)]
 pub struct TargetOrders {
@@ -233,7 +231,6 @@ impl AmmState {
     }
 }
 
-#[cfg_attr(feature = "client", derive(Debug))]
 #[derive(Copy, Clone)]
 #[repr(u64)]
 pub enum AmmParams {
@@ -305,7 +302,6 @@ impl AmmParams {
     }
 }
 
-#[cfg_attr(feature = "client", derive(Debug))]
 #[derive(Copy, Clone, Eq, PartialEq)]
 #[repr(u64)]
 pub enum AmmResetFlag {
@@ -448,7 +444,6 @@ pub struct LastOrderDistance {
 }
 
 /// For simulateTransaction to get instruction data
-#[cfg_attr(feature = "client", derive(Debug))]
 #[derive(Copy, Clone)]
 #[repr(u64)]
 pub enum SimulateParams {

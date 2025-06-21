@@ -7,9 +7,9 @@ build:
 .PHONY: stream
 stream: build
 	if [ -n "$(STOP)" ]; then \
-		substreams run -e $(ENDPOINT) substreams.yaml raydium_amm_events -s $(START) -t $(STOP); \
+		substreams gui -e $(ENDPOINT) substreams.yaml raydium_amm_events -s $(START) -t $(STOP) --limit-processed-blocks 0; \
 	else \
-		substreams run -e $(ENDPOINT) substreams.yaml raydium_amm_events -s $(START); \
+		substreams gui -e $(ENDPOINT) substreams.yaml raydium_amm_events -s $(START) --limit-processed-blocks 0; \
 	fi
 
 .PHONY: protogen

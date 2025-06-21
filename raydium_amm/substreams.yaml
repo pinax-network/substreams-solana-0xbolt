@@ -14,6 +14,9 @@ protobuf:
     - raydium_amm.proto
   importPaths:
     - ./proto
+  excludePaths:
+    - sf/substreams
+    - google
 
 binaries:
   default:
