@@ -495,6 +495,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "pumpfun-substream"
+version = "0.1.5"
+dependencies = [
+ "anyhow",
+ "borsh",
+ "bs58 0.5.1",
+ "lazy_static",
+ "prost",
+ "spl-token-substream",
+ "substreams",
+ "substreams-solana",
+ "substreams-solana-utils",
+ "system-program-substream",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.40"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -725,6 +741,20 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "system-program-substream"
+version = "0.1.5"
+dependencies = [
+ "anyhow",
+ "borsh",
+ "bs58 0.5.1",
+ "lazy_static",
+ "prost",
+ "substreams",
+ "substreams-solana",
+ "substreams-solana-utils",
 ]
 
 [[package]]

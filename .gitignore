@@ -3,3 +3,4 @@ target
 .idea
 *.spkg
 *.log
+.DS_Store

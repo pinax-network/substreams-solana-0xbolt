@@ -2,7 +2,7 @@
 members = [
     "raydium_amm",
     # "spl_token",
-    # "pumpfun",
+    "pumpfun",
     # "system_program",
     # "mpl_token_metadata",
 ]
